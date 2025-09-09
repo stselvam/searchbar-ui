@@ -240,7 +240,7 @@ const App = () => {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-      e.stopPropagation()
+      event.stopPropagation()
       if (document.activeElement !== inputRef.current) {
         if (event.key === 's') {
           inputRef.current.focus();
